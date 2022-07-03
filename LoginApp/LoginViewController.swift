@@ -16,14 +16,19 @@ class LoginViewController: UIViewController {
     @IBOutlet var forgotUserNameButton: UIButton!
     @IBOutlet var forgotPasswordButton: UIButton!
     
-    private let correctUserName = "user1"
+    private let correctUserName = "User"
     private let correctPassword = "1234"
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        
+        welcomeVC.userNameValue = userNameTextField.text
+    }
+    
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        super .touchesBegan(touches, with: event)
+//    }
+    
     // MARK: - @IBActions
     @IBAction func loginButtonTapped() {
         if (
@@ -50,7 +55,6 @@ class LoginViewController: UIViewController {
             and: "Your password is \(correctPassword) 😉"
         )
     }
-    
 }
 
 // MARK: - UIAlertController
