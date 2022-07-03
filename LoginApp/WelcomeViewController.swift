@@ -8,13 +8,24 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
-    @IBOutlet var logoutButton: UILabel!
+    
+    @IBOutlet var userNameLabel: UILabel!
+    
+    var userNameValue: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let loginVC = segue.source as? LoginViewController {
+            userNameLabel.text = loginVC.userNameTextField.text
+        }
+    }
+    
+    @IBAction func logoutButtonPressed() {
+        dismiss(animated: true)
+    }
 }
 
 class GradientView: UIView {
