@@ -26,15 +26,31 @@ class LoginViewController: UIViewController {
 
     // MARK: - @IBActions
     @IBAction func loginButtonTapped() {
-        if userNameTextField.text == correctUserName && passwordTextField.text == correctPassword {
-            print("login success")
-        } else {
+        if (
+            userNameTextField.text != correctUserName ||
+            passwordTextField.text != correctPassword
+        ){
             showAlert(
-                with: "Invalid login or password!",
+                with: "Invalid login or password",
                 and: "Please, enter correct login and password"
             )
         }
     }
+    
+    @IBAction func forgotUserNameTapped() {
+        showAlert(
+            with: "Oops!",
+            and: "Your name is \(correctUserName) 😉"
+        )
+    }
+    
+    @IBAction func forgotPasswordTapped() {
+        showAlert(
+            with: "Oops!",
+            and: "Your password is \(correctPassword) 😉"
+        )
+    }
+    
 }
 
 // MARK: - UIAlertController
