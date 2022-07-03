@@ -83,7 +83,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="6Ss-0q-AfX">
             <objects>
-                <viewController id="gmj-ZA-kDr" userLabel="Welcome View Controller" sceneMemberID="viewController">
+                <viewController id="gmj-ZA-kDr" userLabel="Welcome View Controller" customClass="WelcomeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r2A-0a-ssq">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,28 +115,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJV-QU-KCv">
-                                <rect key="frame" x="158.66666666666666" y="666" width="73" height="24"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSw-ep-Jro">
+                                <rect key="frame" x="106.66666666666667" y="622" width="176.66666666666663" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="tJV-QU-KCv" secondAttribute="height" multiplier="73:24" id="MJh-Nl-yyn"/>
+                                    <constraint firstAttribute="width" secondItem="XSw-ep-Jro" secondAttribute="height" multiplier="144:31" id="CFZ-c8-NFR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Log out"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log out">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lxr-sc-zf4"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Pfd-KB-9ED" firstAttribute="top" secondItem="r2A-0a-ssq" secondAttribute="top" id="11Q-ai-S4Z"/>
                             <constraint firstItem="Pfd-KB-9ED" firstAttribute="trailing" secondItem="lxr-sc-zf4" secondAttribute="trailing" id="FCe-1a-FaI"/>
+                            <constraint firstItem="lxr-sc-zf4" firstAttribute="bottom" secondItem="XSw-ep-Jro" secondAttribute="bottom" constant="150" id="GaK-tz-zyc"/>
                             <constraint firstItem="ysE-vx-Ghi" firstAttribute="centerX" secondItem="lxr-sc-zf4" secondAttribute="centerX" id="KIU-hF-rzg"/>
                             <constraint firstItem="pOY-5X-TaX" firstAttribute="top" secondItem="lxr-sc-zf4" secondAttribute="top" constant="150" id="N2E-sQ-RCq"/>
-                            <constraint firstItem="lxr-sc-zf4" firstAttribute="bottom" secondItem="tJV-QU-KCv" secondAttribute="bottom" constant="120" id="ZGQ-qX-U8r"/>
                             <constraint firstItem="pOY-5X-TaX" firstAttribute="centerX" secondItem="lxr-sc-zf4" secondAttribute="centerX" id="ale-yf-w4v"/>
                             <constraint firstItem="ysE-vx-Ghi" firstAttribute="top" secondItem="pOY-5X-TaX" secondAttribute="bottom" constant="60" id="d5Q-JO-8SJ"/>
                             <constraint firstAttribute="bottom" secondItem="Pfd-KB-9ED" secondAttribute="bottom" id="f62-ZK-Nvy"/>
-                            <constraint firstItem="tJV-QU-KCv" firstAttribute="centerX" secondItem="lxr-sc-zf4" secondAttribute="centerX" id="hAp-xf-Lci"/>
+                            <constraint firstItem="XSw-ep-Jro" firstAttribute="centerX" secondItem="lxr-sc-zf4" secondAttribute="centerX" id="ipg-QM-lpW"/>
                             <constraint firstItem="Pfd-KB-9ED" firstAttribute="leading" secondItem="lxr-sc-zf4" secondAttribute="leading" id="uR0-wD-2UG"/>
                         </constraints>
                     </view>

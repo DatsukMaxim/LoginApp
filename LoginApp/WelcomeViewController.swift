@@ -9,6 +9,7 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet var logoutButton: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
