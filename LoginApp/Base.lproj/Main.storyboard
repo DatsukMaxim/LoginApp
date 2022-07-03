@@ -114,32 +114,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysE-vx-Ghi">
-                                <rect key="frame" x="171" y="290.5" width="72" height="72"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="ysE-vx-Ghi" secondAttribute="height" multiplier="1:1" id="hEL-m1-MGE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSw-ep-Jro">
-                                <rect key="frame" x="118.5" y="674" width="177" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="XSw-ep-Jro" secondAttribute="height" multiplier="144:31" id="CFZ-c8-NFR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Log out"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Log out">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="logoutButtonPressed" destination="gmj-ZA-kDr" eventType="touchUpInside" id="WUt-eI-fgg"/>
-                                    <segue destination="dlc-Jh-ADV" kind="unwind" unwindAction="unwindFor:" id="R15-jb-1Cz"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="1Zk-hJ-91a">
                                 <rect key="frame" x="96.5" y="194" width="221" height="36.5"/>
                                 <subviews>
@@ -166,6 +140,32 @@
                                     <constraint firstAttribute="width" secondItem="1Zk-hJ-91a" secondAttribute="height" multiplier="217:36" id="5mg-CY-goI"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysE-vx-Ghi">
+                                <rect key="frame" x="171" y="290.5" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ysE-vx-Ghi" secondAttribute="height" multiplier="1:1" id="hEL-m1-MGE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSw-ep-Jro">
+                                <rect key="frame" x="118.5" y="674" width="177" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XSw-ep-Jro" secondAttribute="height" multiplier="144:31" id="CFZ-c8-NFR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Log out"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log out">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logoutButtonPressed" destination="gmj-ZA-kDr" eventType="touchUpInside" id="WUt-eI-fgg"/>
+                                    <segue destination="dlc-Jh-ADV" kind="unwind" unwindAction="unwindFor:" id="R15-jb-1Cz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lxr-sc-zf4"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

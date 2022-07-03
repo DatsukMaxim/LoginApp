@@ -21,7 +21,6 @@ class LoginViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        
         welcomeVC.userNameValue = userNameTextField.text
     }
     
@@ -69,7 +68,6 @@ extension LoginViewController {
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
             self.passwordTextField.text = ""
         }
-        
         alert.addAction(okAction)
         present(alert, animated: true)
     }
