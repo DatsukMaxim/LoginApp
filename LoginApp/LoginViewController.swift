@@ -26,17 +26,13 @@ class LoginViewController: UIViewController {
 
     // MARK: - @IBActions
     @IBAction func loginButtonTapped() {
-        if userNameTextField.text != correctUserName {
-            return
-        }
-        if let userName = userNameTextField.text, userName.isEmpty {
-            return
-        }
-        if passwordTextField.text != correctPassword {
-            return
-        }
-        if let password = passwordTextField.text, password.isEmpty {
-            return
+        if userNameTextField.text == correctUserName && passwordTextField.text == correctPassword {
+            print("login success")
+        } else {
+            showAlert(
+                with: "Invalid login or password!",
+                and: "Please, enter correct login and password"
+            )
         }
     }
 }
@@ -49,7 +45,11 @@ extension LoginViewController {
             message: message,
             preferredStyle: .alert
         )
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            self.passwordTextField.text = ""
+        }
         
+        alert.addAction(okAction)
         present(alert, animated: true)
     }
 }
