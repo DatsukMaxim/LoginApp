@@ -9,33 +9,38 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     
+    // MARK: - @IBOutlets
     @IBOutlet var userNameLabel: UILabel!
     
     var userNameValue: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        userNameLabel.text = userNameValue
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let loginVC = segue.source as? LoginViewController {
-            userNameLabel.text = loginVC.userNameTextField.text
-        }
-    }
-    
+    // MARK: - @IBActions
     @IBAction func logoutButtonPressed() {
         dismiss(animated: true)
+    }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        guard let loginVC = segue.destination as? LoginViewController else { return }
+        
+        loginVC.userNameTextField.text = ""
+        loginVC.passwordTextField.text = ""
     }
 }
 
 class GradientView: UIView {
     
+    // MARK: - @IBInspectables
     @IBInspectable private var topColor: UIColor? {
         didSet {
             setupGradientColors()
         }
     }
-    
     @IBInspectable private var bottomColor: UIColor? {
         didSet {
             setupGradientColors()
@@ -58,6 +63,7 @@ class GradientView: UIView {
         gradientLayer.frame = bounds
     }
     
+    // MARK: - Private functions
     private func setupGradient() {
         self.layer.addSublayer(gradientLayer)
         
