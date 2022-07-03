@@ -25,9 +25,10 @@ class LoginViewController: UIViewController {
         welcomeVC.userNameValue = userNameTextField.text
     }
     
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        super .touchesBegan(touches, with: event)
-//    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
     
     // MARK: - @IBActions
     @IBAction func loginButtonTapped() {
