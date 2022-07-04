@@ -83,9 +83,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="forgotPasswordButton" destination="lpA-jU-fv6" id="yM2-bk-Bad"/>
-                        <outlet property="forgotUserNameButton" destination="aqw-hE-pcs" id="6SA-Qs-eeM"/>
-                        <outlet property="loginButton" destination="2WB-gq-K6C" id="gZh-3P-6nQ"/>
                         <outlet property="passwordTextField" destination="s9w-xx-ADE" id="ULD-K4-ult"/>
                         <outlet property="userNameTextField" destination="7q6-Kh-Wnv" id="P7r-Nw-JBg"/>
                     </connections>
@@ -163,7 +160,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="logoutButtonPressed" destination="gmj-ZA-kDr" eventType="touchUpInside" id="WUt-eI-fgg"/>
-                                    <segue destination="dlc-Jh-ADV" kind="unwind" unwindAction="unwindFor:" id="fIb-QJ-1cF"/>
+                                    <segue destination="dlc-Jh-ADV" kind="unwind" unwindAction="unwindFor:" id="tU3-Oz-5ib"/>
                                 </connections>
                             </button>
                         </subviews>
