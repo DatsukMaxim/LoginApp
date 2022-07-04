@@ -24,6 +24,7 @@ class WelcomeViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    // хз почему, но при клике функция перестала срабатывать
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         guard let loginVC = segue.destination as? LoginViewController else { return }
         loginVC.userNameTextField.text = ""
