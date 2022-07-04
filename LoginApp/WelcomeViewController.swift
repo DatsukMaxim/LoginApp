@@ -18,11 +18,6 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         userNameLabel.text = userNameValue
     }
-    
-    // MARK: - @IBActions
-    @IBAction func logoutButtonPressed() {
-        dismiss(animated: true)
-    }
 }
 
 class GradientView: UIView {
