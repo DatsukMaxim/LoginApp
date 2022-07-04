@@ -23,13 +23,6 @@ class WelcomeViewController: UIViewController {
     @IBAction func logoutButtonPressed() {
         dismiss(animated: true)
     }
-    
-    // хз почему, но при клике функция перестала срабатывать
-    @IBAction func unwind(for segue: UIStoryboardSegue) {
-        guard let loginVC = segue.destination as? LoginViewController else { return }
-        loginVC.userNameTextField.text = ""
-        loginVC.passwordTextField.text = ""
-    }
 }
 
 class GradientView: UIView {
