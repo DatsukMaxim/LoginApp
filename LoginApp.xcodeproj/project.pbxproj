@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		138B11462876158C00346835 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B11452876158C00346835 /* UserData.swift */; };
 		13B9641128720B73009B2503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9641028720B73009B2503 /* AppDelegate.swift */; };
 		13B9641328720B73009B2503 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9641228720B73009B2503 /* SceneDelegate.swift */; };
 		13B9641528720B73009B2503 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9641428720B73009B2503 /* LoginViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		138B11452876158C00346835 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		13B9640D28720B73009B2503 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B9641028720B73009B2503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13B9641228720B73009B2503 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		138B114428760D8F00346835 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				138B11452876158C00346835 /* UserData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		13B9640428720B73009B2503 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				138B114128760BBC00346835 /* ViewControllers */,
+				138B114428760D8F00346835 /* Models */,
 				138B114228760BF100346835 /* Storyboards */,
 				138B114028760B9D00346835 /* App */,
 				138B114328760C0D00346835 /* Resources */,
@@ -176,6 +187,7 @@
 				13B9641528720B73009B2503 /* LoginViewController.swift in Sources */,
 				13B9642528721891009B2503 /* WelcomeViewController.swift in Sources */,
 				13B9641128720B73009B2503 /* AppDelegate.swift in Sources */,
+				138B11462876158C00346835 /* UserData.swift in Sources */,
 				13B9641328720B73009B2503 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
