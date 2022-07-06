@@ -9,6 +9,9 @@ import UIKit
 
 class HobbyViewController: UIViewController {
 
+    @IBOutlet var titleText: UILabel!
+    @IBOutlet var image: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
