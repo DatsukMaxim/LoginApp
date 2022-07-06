@@ -40,7 +40,6 @@
                                         <state key="normal" title="Log In"/>
                                         <connections>
                                             <action selector="loginButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="RHt-Zu-9DI"/>
-                                            <segue destination="gmj-ZA-kDr" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="currentContext" modalTransitionStyle="coverVertical" id="zHT-AJ-KM9"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="WdF-BR-Xco">
@@ -52,7 +51,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgot User Name?"/>
                                                 <connections>
-                                                    <action selector="forgotTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="oOP-Iq-Obq"/>
+                                                    <action selector="forgotAuthDataTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJ3-1d-g0Q"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpA-jU-fv6">
@@ -61,7 +60,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgot Password?"/>
                                                 <connections>
-                                                    <action selector="forgotTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="B3J-KB-h3N"/>
+                                                    <action selector="forgotAuthDataTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DG7-dr-UZ1"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -80,6 +79,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="s9w-xx-ADE" id="ULD-K4-ult"/>
                         <outlet property="userNameTextField" destination="7q6-Kh-Wnv" id="P7r-Nw-JBg"/>
+                        <segue destination="gmj-ZA-kDr" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="rjG-HQ-F0q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
