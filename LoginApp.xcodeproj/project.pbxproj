@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		138B11462876158C00346835 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B11452876158C00346835 /* UserData.swift */; };
+		138B11462876158C00346835 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B11452876158C00346835 /* User.swift */; };
 		13B9641128720B73009B2503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9641028720B73009B2503 /* AppDelegate.swift */; };
 		13B9641328720B73009B2503 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9641228720B73009B2503 /* SceneDelegate.swift */; };
 		13B9641528720B73009B2503 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9641428720B73009B2503 /* LoginViewController.swift */; };
@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		138B11452876158C00346835 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		138B11452876158C00346835 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		13B9640D28720B73009B2503 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B9641028720B73009B2503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13B9641228720B73009B2503 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		138B114428760D8F00346835 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				138B11452876158C00346835 /* UserData.swift */,
+				138B11452876158C00346835 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,7 +198,7 @@
 				13D146662876386100116F5B /* PetViewController.swift in Sources */,
 				13D146642876385700116F5B /* HobbyViewController.swift in Sources */,
 				13B9641128720B73009B2503 /* AppDelegate.swift in Sources */,
-				138B11462876158C00346835 /* UserData.swift in Sources */,
+				138B11462876158C00346835 /* User.swift in Sources */,
 				13D146622876383F00116F5B /* AboutMeViewController.swift in Sources */,
 				13B9641328720B73009B2503 /* SceneDelegate.swift in Sources */,
 			);
