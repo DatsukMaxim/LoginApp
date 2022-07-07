@@ -26,9 +26,12 @@ class WelcomeViewController: UIViewController {
         
         viewControllers.forEach { viewController in
             if let aboutMeVC = viewController as? AboutMeViewController {
-                //почему-то не зпходит сюда, а сразу идет в hobbyVC
+                //почему-то не заходит сюда, а сразу идет в hobbyVC
                 print("aboutMeVC")
                 aboutMeVC.view.backgroundColor = .red
+            } else if let petVC = viewController as? PetViewController {
+                print("petVC")
+                petVC.view.backgroundColor = .green
             } else if let hobbyVC = viewController as? HobbyViewController {
                 print("hobbyVC")
                 hobbyVC.view.backgroundColor = .systemMint
