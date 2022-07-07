@@ -13,11 +13,29 @@ class WelcomeViewController: UIViewController {
     @IBOutlet var greetingLabel: UILabel!
     
     var userName = ""
+    private let user = User.getUserInfo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         greetingLabel.text = "Welcome, \(userName)!"
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let tabBarVC = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarVC.viewControllers else { return }
+        
+        viewControllers.forEach { viewController in
+            if let aboutMeVC = viewController as? AboutMeViewController {
+                //почему-то не зпходит сюда, а сразу идет в hobbyVC
+                print("aboutMeVC")
+                aboutMeVC.view.backgroundColor = .red
+            } else if let hobbyVC = viewController as? HobbyViewController {
+                print("hobbyVC")
+                hobbyVC.view.backgroundColor = .systemMint
+            }
+        }
+    }
+
 }
 
 class GradientView: UIView {
