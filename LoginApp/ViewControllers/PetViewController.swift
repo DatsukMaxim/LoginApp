@@ -9,7 +9,7 @@ import UIKit
 
 class PetViewController: UIViewController {
 
-    @IBOutlet var titleText: UILabel!
+    @IBOutlet var userInfo: UILabel!
     @IBOutlet var image: UIImageView!
     
     override func viewDidLoad() {
