@@ -13,12 +13,11 @@ class LoginViewController: UIViewController {
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    private let correctUserName = "User"
-    private let correctPassword = "1234"
+    private let user = User.getUserData()
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.userName = correctUserName
+        welcomeVC.user = user
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -28,8 +27,8 @@ class LoginViewController: UIViewController {
     
     // MARK: - @IBActions
     @IBAction func loginButtonTapped() {
-        guard userNameTextField.text == correctUserName,
-              passwordTextField.text == correctPassword
+        guard userNameTextField.text == user.login,
+              passwordTextField.text == user.password
         else {
             showAlert(
                 title: "Invalid login or password",
@@ -44,8 +43,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func forgotAuthDataTapped(_ sender: UIButton) {
         sender.tag == 0
-            ? showAlert(title: "Oops!", message: "Your name is \(correctUserName) 😉")
-            : showAlert(title: "Oops!", message: "Your password is \(correctPassword) 😉")
+        ? showAlert(title: "Oops!", message: "Your name is \(user.login) 😉")
+        : showAlert(title: "Oops!", message: "Your password is \(user.password) 😉")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {

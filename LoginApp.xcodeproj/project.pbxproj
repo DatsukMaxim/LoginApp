@@ -15,6 +15,7 @@
 		13B9641A28720B77009B2503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B9641928720B77009B2503 /* Assets.xcassets */; };
 		13B9641D28720B77009B2503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B9641B28720B77009B2503 /* LaunchScreen.storyboard */; };
 		13B9642528721891009B2503 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9642428721891009B2503 /* WelcomeViewController.swift */; };
+		13BDE6A0287DD346002A381E /* JobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BDE69F287DD346002A381E /* JobViewController.swift */; };
 		13D146622876383F00116F5B /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D146612876383F00116F5B /* AboutMeViewController.swift */; };
 		13D146642876385700116F5B /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D146632876385700116F5B /* HobbyViewController.swift */; };
 		13D146662876386100116F5B /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D146652876386100116F5B /* PetViewController.swift */; };
@@ -31,6 +32,7 @@
 		13B9641C28720B77009B2503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13B9641E28720B77009B2503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B9642428721891009B2503 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		13BDE69F287DD346002A381E /* JobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobViewController.swift; sourceTree = "<group>"; };
 		13D146612876383F00116F5B /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		13D146632876385700116F5B /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
 		13D146652876386100116F5B /* PetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				13B9641428720B73009B2503 /* LoginViewController.swift */,
 				13B9642428721891009B2503 /* WelcomeViewController.swift */,
 				13D146612876383F00116F5B /* AboutMeViewController.swift */,
+				13BDE69F287DD346002A381E /* JobViewController.swift */,
 				13D146632876385700116F5B /* HobbyViewController.swift */,
 				13D146652876386100116F5B /* PetViewController.swift */,
 			);
@@ -195,6 +198,7 @@
 			files = (
 				13B9641528720B73009B2503 /* LoginViewController.swift in Sources */,
 				13B9642528721891009B2503 /* WelcomeViewController.swift in Sources */,
+				13BDE6A0287DD346002A381E /* JobViewController.swift in Sources */,
 				13D146662876386100116F5B /* PetViewController.swift in Sources */,
 				13D146642876385700116F5B /* HobbyViewController.swift in Sources */,
 				13B9641128720B73009B2503 /* AppDelegate.swift in Sources */,

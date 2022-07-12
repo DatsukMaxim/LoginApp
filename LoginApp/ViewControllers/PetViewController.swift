@@ -9,11 +9,18 @@ import UIKit
 
 class PetViewController: UIViewController {
 
-    @IBOutlet var userInfo: UILabel!
-    @IBOutlet var image: UIImageView!
+    @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var ageLabel: UILabel!
+    @IBOutlet var photo: UIImageView!
     
+    var user: User!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        descriptionLabel.text = user.person.pet.description
+        nameLabel.text = user.person.pet.name
+        ageLabel.text = user.person.pet.age
+        photo.image = UIImage(named: "Pet")
     }
-
 }

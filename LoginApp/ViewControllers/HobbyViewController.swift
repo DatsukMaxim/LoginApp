@@ -9,11 +9,14 @@ import UIKit
 
 class HobbyViewController: UIViewController {
 
-    @IBOutlet var userInfo: UILabel!
-    @IBOutlet var image: UIImageView!
+    @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var photo: UIImageView!
+    
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        descriptionLabel.text = user.person.hobby.description
+        photo.image = UIImage(named: "Friends")
     }
-    
 }
