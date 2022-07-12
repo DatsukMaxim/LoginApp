@@ -325,7 +325,7 @@
                             <constraint firstItem="I48-t5-yNC" firstAttribute="trailing" secondItem="WZ9-JW-udW" secondAttribute="trailing" constant="16" id="uRJ-oo-mfF"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Hobby" image="hourglass.start" catalog="system" id="PMs-cI-gBn"/>
+                    <tabBarItem key="tabBarItem" title="Hobby" image="hourglass.bottomhalf.filled" catalog="system" id="PMs-cI-gBn"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="cf2-JW-Ome" id="MKE-XU-ZOX"/>
                         <outlet property="photo" destination="WZ9-JW-udW" id="IPE-ch-423"/>
@@ -554,7 +554,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="hourglass.start" catalog="system" width="102" height="128"/>
+        <image name="hourglass.bottomhalf.filled" catalog="system" width="102" height="128"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="menucard" catalog="system" width="107" height="128"/>
         <image name="rectangle.3.group" catalog="system" width="128" height="81"/>
